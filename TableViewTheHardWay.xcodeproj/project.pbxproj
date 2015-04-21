@@ -14,6 +14,7 @@
 		E477A5911AE69ED1009E38DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E477A5901AE69ED1009E38DA /* Images.xcassets */; };
 		E477A5941AE69ED1009E38DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E477A5921AE69ED1009E38DA /* LaunchScreen.xib */; };
 		E477A5A01AE69ED1009E38DA /* TableViewTheHardWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E477A59F1AE69ED1009E38DA /* TableViewTheHardWayTests.m */; };
+		E477A5AF1AE69F4A009E38DA /* RecipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E477A5AE1AE69F4A009E38DA /* RecipeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E477A5991AE69ED1009E38DA /* TableViewTheHardWayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTheHardWayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E477A59E1AE69ED1009E38DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E477A59F1AE69ED1009E38DA /* TableViewTheHardWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewTheHardWayTests.m; sourceTree = "<group>"; };
+		E477A5AD1AE69F4A009E38DA /* RecipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeView.h; sourceTree = "<group>"; };
+		E477A5AE1AE69F4A009E38DA /* RecipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		E477A5771AE69ED1009E38DA = {
 			isa = PBXGroup;
 			children = (
+				E477A5A91AE69ED5009E38DA /* Controller */,
 				E477A5821AE69ED1009E38DA /* TableViewTheHardWay */,
 				E477A59C1AE69ED1009E38DA /* TableViewTheHardWayTests */,
 				E477A5811AE69ED1009E38DA /* Products */,
@@ -83,8 +87,6 @@
 			children = (
 				E477A5871AE69ED1009E38DA /* AppDelegate.h */,
 				E477A5881AE69ED1009E38DA /* AppDelegate.m */,
-				E477A58A1AE69ED1009E38DA /* ViewController.h */,
-				E477A58B1AE69ED1009E38DA /* ViewController.m */,
 				E477A58D1AE69ED1009E38DA /* Main.storyboard */,
 				E477A5901AE69ED1009E38DA /* Images.xcassets */,
 				E477A5921AE69ED1009E38DA /* LaunchScreen.xib */,
@@ -117,6 +119,18 @@
 				E477A59E1AE69ED1009E38DA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E477A5A91AE69ED5009E38DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E477A58A1AE69ED1009E38DA /* ViewController.h */,
+				E477A58B1AE69ED1009E38DA /* ViewController.m */,
+				E477A5AD1AE69F4A009E38DA /* RecipeView.h */,
+				E477A5AE1AE69F4A009E38DA /* RecipeView.m */,
+			);
+			name = Controller;
+			path = TableViewTheHardWay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +235,7 @@
 			files = (
 				E477A58C1AE69ED1009E38DA /* ViewController.m in Sources */,
 				E477A5891AE69ED1009E38DA /* AppDelegate.m in Sources */,
+				E477A5AF1AE69F4A009E38DA /* RecipeView.m in Sources */,
 				E477A5861AE69ED1009E38DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

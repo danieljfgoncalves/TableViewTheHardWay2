@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RecipeView.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Initiate an instance of RecipeTableViewController
+    RecipeView *recipeTable = [[RecipeView alloc]initWithStyle:UITableViewStylePlain];
+    
+    // Set Window
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.rootViewController = recipeTable;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
